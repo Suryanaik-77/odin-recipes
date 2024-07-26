@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #container{
+            background-color: #1F2937;
+            color: white;
+            display: flex;
+            font-size: 18px;
+            align-items: center;
+            padding: 10px;
+            gap: 40px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            
+        }
+        #container > #h1{
+            font-weight: bold;
+            flex: 1;
+            padding: 20px;
+            font-size: 30px;
+            letter-spacing: 2px;
+        }
+        #container > #h4{
+            padding-right: 10px;
+        }
+        .section2{
+            background-color: #1F2937;
+            color: #ffff;
+            display: flex;
+            justify-content: space-evenly;
+            padding-bottom: 15px;
+        }
+         .section2> .content-1{
+            width: 450px;
+         }
+         .section2 > .content-1 h1{
+            font-size: 48px;
+            margin-bottom: 20px;
+         }
+         .section2 > .content-1 p{
+            margin-bottom: 10px;
+         }
+         .section2 > .content-1 button{
+            padding: 10px 13px;
+            font-size: 16px;
+            background-color: blue;
+            outline: none;
+            color: #ffff;
+            font-weight: 600;
+            border-radius: 7px;
+            border: none;
+         }
+         .section3{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 20px;
+         }
+         .section3 h1{
+            padding-top: 40px;
+            margin-bottom: 40px;
+         }
+         .recipes{
+            display: flex;
+            gap: 40px;
+         }
+         .item p{
+            font-size: 10px;
+            font-weight: bold;
+            margin-top: 10px;
+            width: 145px;
+         }
+
+         .section4{
+            background-color: #E5E7EB;
+            font-size: 36px;
+            font-style: italic;
+            color: #1F2937;
+            padding-top: 40px;
+            padding-right: 120px;
+            padding-left: 120px;
+            padding-bottom: 40px;
+            
+         }
+         .section4 p{
+            margin-top: 20px;
+            display: flex;
+            justify-content: flex-end;
+            font-size: 20px;
+           
+         }
+         .last{
+            background-color: #1F2937;
+            color: #ffff;
+            width: auto;
+            height: 120px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+
+    </style>
+    <title>The landing page</title>
+</head>
+<body>
+    <div id="container">
+         <p id="h1">LOGO</p>
+         <p id="h2">Home</p>
+         <p id="h3">Recipes</p>
+         <p id="h4">Signup</p>
+    </div>
+         <div class="section2">
+            <div class="content-1">
+         <h1>This website is awesome</h1>
+         <p>This website has some subtext that goes here under the main title. It's smaller font and the color is lower contrast</p>
+         <button>Signup</button>
+         </div>
+         <div>
+            <img src="https://lh3.googleusercontent.com/proxy/3M5fKmqCsyKjF6vxj75sFkYj29l2DoKJWbBFGph1eBeygd59_flsuVtof6fZVbiO_sB4a0Wz63Nrb0qKLt1q-8zg-t5LYWcBQA" alt="chicken lilypop" width="300px" height="250px">
+         </div>
+         </div>
+
+    <div class="section3">
+        <h1>some random information</h1>
+        <div class="recipes">
+            <div class="item">
+            <img src="https://realfood.tesco.com/media/images/1400x919-Nutty-chicken-noodle-salad-93504613-9f94-4524-b9fd-26f54375c722-0-1400x919.jpg" alt="" width="150px" height="150px">
+            <p>this is some subtext under and illustration or image</p>
+            </div>
+            <div class="item"><img src="https://www.persnicketyplates.com/wp-content/uploads/2023/03/slow-cooker-honey-lime-chicken-tacos21-SQUARE-1024x1024.jpg" alt="" width="150px" height="150px">
+                <p>this is some subtext under and illustration or image</p>
+            </div>
+            <div class="item"> <img src="https://www.pamperedchef.ca/iceberg/com/recipe/1852717-lg.jpg" alt="" width="150px" height="150px">
+                <p>this is some subtext under and illustration or image</p>
+            </div>
+            <div class="item"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJYRePc1femy1QH5X7bmplSAlDQSTWN4GGjQ&s" alt="" width="150px" height="150px">
+                <p>this is some subtext under and illustration or image</p>
+            </div>           
+        </div>
+    </div>     
+
+    <div class="section4">
+        <span>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that looks nice.</span>
+        <p><strong>-Thor, God of Thunder</strong></p>
+    </div>
+
+    <div class="last">
+        <p>Copyright © Surya - The Odin Project 2024</p>
+    </div>
+   
+</body>
+</html>
