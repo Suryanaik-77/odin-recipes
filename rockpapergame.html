@@ -147,7 +147,7 @@
             cp.textContent=" Computer win!";
             submit.style.display="none";
         }
-        if(textboxVal.length === 0){
+        if(textboxVal.length === 0 || textboxVal !=="Rock" || textboxVal !=="Paper" || textboxVal !=="Scissor"){
             alert("Please Enter Your Choice!");
             hp.textContent = "";
             cp.textContent = ``;
