@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            /*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS69FNcUmDBUi1Jpql2EsC4RnWqk7vk3k5iaQ&s");*/
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #Header{
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(38, 38, 65);
+            color: #ffff;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        #container{
+            display: flex;
+            flex-direction: row;
+        }
+        #human{
+            
+            width: 50%;
+            height: 400px;
+            text-align: center;
+        }
+        #inputfiled{
+            width:150px;
+            height: 30px;
+            margin: 20px;
+            outline:none;
+            padding: 0px 2px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 18px;
+            font-weight: 600;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            color: rgb(68, 197, 113);
+        }
+        #computer{
+           
+            width: 50%;
+            height: 400px;
+        }
+        #submit{
+            padding: 8px 10px;
+            font-weight: 600;
+            background-color: rgb(51, 200, 105);
+            
+            color: white;
+            letter-spacing: 1px;
+            border-radius: 8px;
+        }
+        .cp{
+            margin: 20px 0 10px 0;
+        }
+        #footer{
+            background-color: rgb(38, 38, 65);
+            width: 100%;
+            height: 130px;
+            color: #ffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: medium;
+        }
+    </style>
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+    <div id="Header">
+        <h1>Rock Paper Scissor Game</h1>
+        
+          <p style="font-weight: 700; margin-top: 20px;">You vs Computer</p>
+    </div>
+    <div id="container">
+    <div id="human">
+        <span>Enter Your Choice:</span><input type="text" name="input" id="inputfiled">
+        <button value="submit" id="submit">Submit</button>
+        <p class="hp"></p>
+        <span id="scoreH"></span>
+    </div>
+    <div id="computer">
+        <p class="cp">
+        </p>
+        <span id="ScoreC" ></span>
+    </div>
+    </div>
+    <div id="footer">
+       <p>Copyright @ odin-project 2024</p>
+    </div>
+    
+</body>
+<script>
+    let array = ["Rock", "Paper", "Scissor"];
+    let submit = document.getElementById("submit");
+    let hp = document.getElementsByClassName("hp")[0];
+    let cp = document.getElementsByClassName("cp")[0];
+    let humanScore = document.getElementById("scoreH");
+    let computerScore= document.getElementById("ScoreC");
+    let computer=0, human=0;
+
+    submit.addEventListener("click", function rps() {
+        let textbox = document.getElementById("inputfiled");
+        let textboxVal = textbox.value.trim().charAt(0).toUpperCase() + textbox.value.slice(1).toLowerCase();
+
+        let random = Math.floor(Math.random() * array.length);
+        let computerChoice = array[random];
+
+        if (computerChoice === textboxVal) {
+            hp.textContent = "Tie!";
+            cp.textContent = `Tie! Computer choose "${computerChoice}"`; 
+            //humanScore.textContent=`your score ${count}`;
+           // computerScore.textContent=`Compuetr score ${count}`;
+            
+        } else if (
+            (computerChoice === "Rock" && textboxVal === "Scissor") ||
+            (computerChoice === "Paper" && textboxVal === "Rock") ||
+            (computerChoice === "Scissor" && textboxVal === "Paper")
+        ) {
+            hp.textContent = "You Lose";
+            cp.textContent = `Computer wins by choosing "${computerChoice}"`;
+            computerScore.textContent=`Compuetr score ${++computer}`;
+        } else {
+            hp.textContent = "You Win";
+            cp.textContent = `Computer loses by choosing "${computerChoice}"`;
+            humanScore.textContent=`your score ${++human}`;
+        }
+        if(human === 3){
+            hp.textContent=" You win!";
+            submit.style.display="none";
+        }else if(computer === 3){
+            cp.textContent=" Computer win!";
+            submit.style.display="none";
+        }
+        if(textboxVal.length === 0){
+            alert("Please Enter Your Choice!");
+            hp.textContent = "";
+            cp.textContent = ``;
+            computerScore.textContent=``;
+            humanScore.textContent=``;
+        }
+
+    });
+</script>
+</html>
