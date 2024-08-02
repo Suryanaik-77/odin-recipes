@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    
+}
+#border{
+    width: 220px;
+    height: 400px;
+    border: 2px solid gray;
+    background-color: black;
+    padding: 15px 0px 0px 19px;
+    border-radius: 3%;
+    box-shadow: 4px 6px 3px black;
+}
+#symbol{
+    
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px 1px;
+}
+#symbol div{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 600;
+}
+#symbol div:nth-child(1){
+    background-color: orange;
+    border-radius: 50%;
+}
+#symbol div:nth-child(2){
+    background-color: orange;
+    border-radius: 50%;
+}
+#symbol div:nth-child(3){
+    background-color: orange;
+    border-radius: 50%;
+}
+#symbol div:nth-child(4){
+    background-color: orange;
+    border-radius: 50%;
+}
+#symbol div:nth-child(5){
+    background-color: orange;
+    border-radius: 50%;
+}
+#symbol div:nth-child(16){
+    background-color: orange;
+    border-radius: 50%;
+}
+#symbol div:nth-child(6){
+    background-color: #ffff;
+    color: black;
+    border-radius: 50%;
+}
+#symbol div:nth-child(7){
+    background-color: #ffff;
+    color: black;
+    border-radius: 50%;
+}
+#symbol div:nth-child(8){
+    background-color: #ffff;
+    color: black;
+    border-radius: 50%;
+}
+#symbol div:nth-child(9){
+    background-color: #ffff;
+    color: black;
+    border-radius: 50%;
+}
+#symbol div:nth-child(10){
+    background-color: #ffff;
+    color: black;
+    border-radius: 50%;
+}
+#symbol div:nth-child(11){
+    background-color: #ffff;
+    color: black;
+    border-radius: 50%;
+}
+#symbol div:nth-child(12){
+    background-color: #ffff;
+    color: black;
+    border-radius: 50%;
+}
+#symbol div:nth-child(13){
+    background-color: #ffff;
+    color: black;
+    border-radius: 50%;
+}
+#symbol div:nth-child(14){
+    background-color: #ffff;
+    color: black;
+    border-radius: 50%;
+}
+#symbol div:nth-child(15){
+    background-color: #ffff;
+    color: black;
+    border-radius: 50%;
+}
+#symbol div:nth-child(17){
+    background-color: #ffff;
+    color: black;
+    border-radius: 50%;
+}
+#input{
+    width: 175px;
+    height: 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    outline: none;
+    font-size: 20px;
+}
+ 
