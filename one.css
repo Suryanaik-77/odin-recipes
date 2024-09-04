@@ -1,0 +1,157 @@
+body{
+    width: 100%;
+    height: 100vh;
+    
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right top, #212429, #182124, #121d1d, #0f1914, #101407);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    
+}
+#container{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #ffff;
+}
+#sa{
+    position: absolute;
+    top: 110px;
+    left: 60px;
+    color: #ffff;
+    font-size: 20px;
+}
+#container nav{
+ position: absolute;
+ top: 20px;
+ right: 40px;
+}
+nav ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 40px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #2eb368;
+    font-size: 14px;
+    font-weight: 600;
+}
+#container3{
+    position: relative;
+}
+#container3 h3{
+    position: absolute;
+    top: 180px;
+    left: 100px;
+}
+#movie #img1{
+position: absolute;
+top: 250px;
+left: 100px;
+border-radius: 6px;
+}
+
+#movie #img2{
+    position: absolute;
+    top: 250px;
+    left: 330px;
+    border-radius: 6px;
+    }
+
+    #img3{
+        position: absolute;
+        top: 250px;
+        left: 560px;
+        border-radius: 6px;
+        }
+
+ #img4{
+            position: absolute;
+            top: 250px;
+            left: 790px;
+            border-radius: 6px;
+ }
+ #img5{
+    position: absolute;
+    top: 250px;
+    left: 1020px;
+    border-radius: 6px;
+}
+#img6{
+    position: absolute;
+    top: 250px;
+    left: 1250px;
+    border-radius: 6px;
+}
+    #ap{
+        position: absolute;
+        top: 495px;
+        left: 100px;
+        height: 50px;
+        width: 200px;
+        background-color: #ffff;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius:  6px;
+    }
+    #ap1{
+        position: absolute;
+        top: 495px;
+        left: 330px;
+        height: 50px;
+        width: 200px;
+        background-color: #ffff;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius:  6px;
+    }
+    #ap2{
+        position: absolute;
+        top: 495px;
+        left: 560px;
+        height: 50px;
+        width: 200px;
+        background-color: #ffff;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius:  6px;
+    }
+    #ap3{
+        position: absolute;
+        top: 495px;
+        left: 790px;
+        height: 50px;
+        width: 200px;
+        background-color: #ffff;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius:  6px;
+    }
+    #ap4{
+        position: absolute;
+        top: 495px;
+        left: 1020px;
+        height: 50px;
+        width: 200px;
+        background-color: #ffff;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius:  6px;
+    }
+    #ap5{
+        position: absolute;
+        top: 495px;
+        left: 1250px;
+        height: 50px;
+        width: 200px;
+        background-color: #ffff;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius:  6px;
+    }

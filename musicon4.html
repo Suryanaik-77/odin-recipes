@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <i><link rel="stylesheet" href="index1.css"></i>
+</head>
+<body>
+    <div id="container">
+        <nav>
+         <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="#">Profile</a></li>
+             <li><a href="#">Sign up</a></li>
+         </ul>
+        </nav>
+    </div>
+    <div id="container3">
+        <div id="movie">
+            <div>
+           <img src="saalar.jpeg" alt="" height="400px" width="300px">
+           <audio controls id="ap" class="audio-player">
+           
+            <source src="[iSongs.info] 07 - Vinaraa.mp3" type="audio/mpeg">
+           </audio> 
+            </div>
+        
+        </div>
+        <div id="audio">
+            
+            
+           <img src="https://d33wubrfki0l68.cloudfront.net/8d79b89491cf9ef958be1386776dc937d39266be/8fc70/static/particle_background-24c33d8299e223ef4a14dd998f7f1256.jpg" alt="" height="50px" width="300px" onclick="window.location.href='musicon2.html';">
+           <img src="https://w7.pngwing.com/pngs/181/900/png-transparent-play-icon-red-area-font-play-button-text-internet-circle-thumbnail.png" id="s5" height="35px" width="35px" >
+           <h3>Track List <br>
+            <span>   Sooreede</span>
+         </h3>
+           </audio> 
+        </div>
+        <div id="audio1">
+            <img src="https://d33wubrfki0l68.cloudfront.net/8d79b89491cf9ef958be1386776dc937d39266be/8fc70/static/particle_background-24c33d8299e223ef4a14dd998f7f1256.jpg" alt="" height="50px" width="300px" onclick="window.location.href='musicon1.html';">
+            <img src="https://w7.pngwing.com/pngs/181/900/png-transparent-play-icon-red-area-font-play-button-text-internet-circle-thumbnail.png" id="s5" height="35px" width="35px" >
+            <h3>
+                <span>Prathikadalo</span>
+             </h3>
+           
+        </div>
+        <div id="audio2">
+            <img src="https://d33wubrfki0l68.cloudfront.net/8d79b89491cf9ef958be1386776dc937d39266be/8fc70/static/particle_background-24c33d8299e223ef4a14dd998f7f1256.jpg" alt="" height="50px" width="300px" onclick="window.location.href='musicon.html';">
+            <img src="https://w7.pngwing.com/pngs/181/900/png-transparent-play-icon-red-area-font-play-button-text-internet-circle-thumbnail.png" id="s5" height="35px" width="35px" >
+            <h3>
+                <span> Sound of Saalar</span>
+             </h3>
+            
+         </div>
+        
+         <div id="audio3">
+            <img src="https://d33wubrfki0l68.cloudfront.net/8d79b89491cf9ef958be1386776dc937d39266be/8fc70/static/particle_background-24c33d8299e223ef4a14dd998f7f1256.jpg" alt="" height="50px" width="300px" onclick="window.location.href='musicon4.html';">
+            <img src="https://w7.pngwing.com/pngs/181/900/png-transparent-play-icon-red-area-font-play-button-text-internet-circle-thumbnail.png" id="s5" height="35px" width="35px" >
+            <h3>
+                <span>Vinaraa</span>
+             </h3>
+           
+         </div>
+         <div id="audio4" class="audio-player">
+            <img src="https://d33wubrfki0l68.cloudfront.net/8d79b89491cf9ef958be1386776dc937d39266be/8fc70/static/particle_background-24c33d8299e223ef4a14dd998f7f1256.jpg" alt="" height="50px" width="300px" onclick="window.location.href='musicon5.html';">
+            <img src="https://w7.pngwing.com/pngs/181/900/png-transparent-play-icon-red-area-font-play-button-text-internet-circle-thumbnail.png" id="s5" height="35px" width="35px" >
+            <h3>
+                <span> Aaru Sethulunnaa</span>
+             </h3>
+           
+            <div id="audio5" class="audio-player">
+                <img src="https://d33wubrfki0l68.cloudfront.net/8d79b89491cf9ef958be1386776dc937d39266be/8fc70/static/particle_background-24c33d8299e223ef4a14dd998f7f1256.jpg" alt="" height="50px" width="300px" onclick="window.location.href='musicon3.html';">
+            <img src="https://w7.pngwing.com/pngs/181/900/png-transparent-play-icon-red-area-font-play-button-text-internet-circle-thumbnail.png" id="s5" height="35px" width="35px" >
+                <h3>
+                    <span> 6.Wrath of Salaar</span>
+                 </h3>
+                
+             </div>
+         </div>
+         
+    </div>
+   
+    <script>
+        const audioPlayers = document.querySelectorAll('.audio-player');
+
+        audioPlayers.forEach(player => {
+            player.addEventListener('play', function() {
+                audioPlayers.forEach(otherPlayer => {
+                    if (otherPlayer !== player) {
+                        otherPlayer.pause();
+                    }
+                });
+            });
+        });
+        const images = document.querySelectorAll('#movie img');
+
+      
+    </script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>
